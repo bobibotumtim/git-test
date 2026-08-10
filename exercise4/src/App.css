@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #202124;
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: min(1000px, 100%);
+    margin: auto;
+    padding: 24px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 24px;
+    border-radius: 8px;
+    background: white;
+}
+
+.hello-react {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hello-react span,
+.basic-jsx h2 {
+    color: blue;
+    font-weight: 700;
+}
+
+.logo-card {
+    text-align: center;
+}
+
+.react-symbol {
+    color: #20c6e8;
+    font-size: 180px;
+    line-height: 1;
+}
+
+.logo-caption {
+    color: #087e9c;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #555;
+}
+
+.navbar a {
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .active {
+    background: #2eb67d;
+}
+
+.navbar .login {
+    background: black;
+}
+
+.basic-jsx h2 {
+    font-size: 36px;
+}
+
+.basic-jsx h3 {
+    font-size: 28px;
+}
+
+.basic-jsx li {
+    margin: 8px 0;
+    font-size: 22px;
+}
+
+.company-list {
+    display: grid;
+    gap: 8px;
+}
+
+.company-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    border: 1px solid #ddd;
+}
+
+.company-row p {
+    margin: 0;
+    padding: 12px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    background: #087e9c;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    main {
+        padding: 12px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .company-row {
+        grid-template-columns: 1fr;
+    }
+
+    .company-row p {
+        border-bottom: 1px solid #ddd;
+        border-right: 0;
+    }
+}
