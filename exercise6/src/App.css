@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  color: #555;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+.hero {
+  display: flex;
+  min-height: 360px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background: #d3d3d3;
+  color: #999;
+}
+.hero strong {
+  font-size: clamp(54px, 9vw, 110px);
+  font-weight: 300;
+}
+.hero button {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 60px;
+}
+.dots {
+  text-align: center;
+  font-size: 30px;
+}
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+.placeholder-image {
+  display: grid;
+  min-height: 280px;
+  place-content: center;
+  background: #d4d4d4;
+  color: #999;
+  text-align: center;
+  font-size: 22px;
+}
+.placeholder-image small {
+  margin-top: 8px;
+}
+.product-card p {
+  font-size: 13px;
+}
+.price {
+  float: right;
+  color: #f39c12;
+}
+.sale {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: -34px;
+  width: 120px;
+  padding: 4px;
+  background: #f39c12;
+  color: white;
+  text-align: center;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #20252b;
+  font-family: Arial, sans-serif;
+}
+.demo-panel {
+  margin: 28px 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.grid-demo .row > div {
+  min-height: 72px;
+  padding: 12px;
+  border: 1px solid #888;
+  background: #d4d4d4;
+}
+.demo-footer {
+  margin-top: 28px;
+  padding: 16px;
+  background: #d8caca;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+.tech-row {
+  padding-inline: 30px;
+}
+.tech-logo {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  clip-path: polygon(8% 0, 92% 0, 82% 88%, 50% 100%, 18% 88%);
+}
+.html-logo {
+  background: #f4511e;
+}
+.css-logo {
+  background: #264de4;
+}
+.bootstrap-logo {
+  border-radius: 28px;
+  background: #7952b3;
+  clip-path: none;
+}
+.fpt-site header {
+  padding: 28px;
+  background: #f7941d;
+  color: white;
+  text-align: center;
+}
+.fpt-site nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.fpt-logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+.fpt-logo span:nth-child(1) {
+  color: #1268b3;
+}
+.fpt-logo span:nth-child(2) {
+  color: #f37021;
+}
+.fpt-logo span:nth-child(3) {
+  color: #28a745;
+}
+.fpt-logo strong {
+  color: #235b88;
+}
+.fpt-site main {
+  padding: 60px 20px;
+  text-align: center;
+}
+.fpt-site main h2 {
+  margin-top: 32px;
+}
+.fpt-site footer {
+  padding: 24px;
+  background: #f8cf85;
+  text-align: center;
+}
+.student-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 28px;
+  background: #f4d6b5;
+  color: #ef7622;
+}
+.fpt-logo.small {
+  font-size: 22px;
+}
+.student-hero {
+  padding: 70px 20px;
+  background: #f7931e;
+  color: white;
+  text-align: center;
+}
+.student-avatar {
+  display: grid;
+  min-height: 240px;
+  place-items: center;
+  background: linear-gradient(135deg, #ff9d3f, #d45b13);
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+}
+.student-card {
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .student-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .student-header nav {
+    font-size: 14px;
+  }
+  .tech-logo {
+    min-height: 130px;
+  }
+}

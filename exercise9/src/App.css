@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f6fa;
+  color: #202020;
+  font-family: Arial, sans-serif;
+}
+.app {
+  width: min(1100px, 100%);
+  margin: auto;
+  padding: 30px 18px;
+}
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+.exercise-box {
+  padding: 22px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+.hello {
+  display: grid;
+  place-items: center;
+}
+.counter {
+  text-align: center;
+}
+.counter strong {
+  display: block;
+  margin: 14px;
+  font-size: 50px;
+}
+.counter button {
+  margin: 4px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #f7941d;
+  color: white;
+}
+.simple-card {
+  display: flex;
+  border: 2px solid #d69e00;
+  background: #111;
+  color: white;
+}
+.simple-card img {
+  width: 110px;
+  object-fit: cover;
+}
+.simple-card div {
+  padding: 10px;
+}
+.simple-card h3 {
+  margin: 0;
+  color: #f6ad00;
+}
+.fpt-website {
+  margin-top: 28px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+}
+.fpt-website header {
+  padding: 30px;
+  background: #f7941d;
+  color: white;
+  text-align: center;
+}
+.fpt-logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.fpt-logo span:nth-child(1) {
+  color: #1268b3;
+}
+.fpt-logo span:nth-child(2) {
+  color: #fff;
+}
+.fpt-logo span:nth-child(3) {
+  color: #25a84a;
+}
+.fpt-website nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.fpt-website main {
+  padding: 55px 20px;
+  text-align: center;
+}
+.fpt-website footer {
+  padding: 22px;
+  background: #f8cf85;
+  text-align: center;
+}

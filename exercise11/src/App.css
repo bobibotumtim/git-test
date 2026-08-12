@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.exercise-page {
+  width: min(920px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 24px 0 70px;
+}
+
+.exercise-page > h1 {
+  margin: 0 0 34px;
+  font: bold 24px/1.3 Georgia, "Times New Roman", serif;
+}
+
+.exercise-section {
+  margin-bottom: 70px;
+}
+
+.exercise-section > h2 {
+  margin: 0 0 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d8d8d8;
+  font: bold 18px/1.5 Georgia, "Times New Roman", serif;
+}
+
+/* Exercise 1: To-do list */
+.todo-demo {
+  width: min(520px, 100%);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px;
+}
+
+.todo-form input,
+.todo-form button {
+  height: 46px;
+  border: 2px solid #888;
+  border-radius: 5px;
+  font-size: 28px;
+}
+
+.todo-form input {
+  min-width: 0;
+  padding: 3px 7px;
+}
+
+.todo-form button {
+  margin-left: 1px;
+  padding: 0 12px;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.field-error,
+.calculator-error {
+  margin: 8px 0 0;
+  color: #c00000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.list-heading {
+  margin: 52px 0 38px;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  font-size: 30px;
+}
+
+.delete-button {
+  padding: 3px 8px;
+  color: #000;
+  background: #efefef;
+  border: 1px solid #777;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* Exercise 2: Calculator */
+.calculator-demo {
+  width: 280px;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.calculator-form {
+  display: grid;
+  grid-template-columns: 58px 152px;
+  gap: 3px 0;
+  align-items: center;
+}
+
+.calculator-form label {
+  white-space: nowrap;
+}
+
+.calculator-form input {
+  width: 152px;
+  height: 23px;
+  padding: 1px 4px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+}
+
+.calculator-form select {
+  width: 48px;
+  height: 24px;
+  padding: 0 2px;
+}
+
+.calculator-form button {
+  width: max-content;
+  padding: 2px 9px;
+}
+
+.calculator-error {
+  margin-left: 58px;
+}
+
+/* Exercise 3: Search filter */
+.search-demo {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.search-row label {
+  font-size: 34px;
+}
+
+.search-row input {
+  width: 100%;
+  height: 48px;
+  padding: 3px 8px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+.technology-list {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.technology-item,
+.technology-list p {
+  margin: 0;
+  font-size: 35px;
+  line-height: 1.34;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .exercise-page {
+    width: min(100% - 20px, 920px);
+  }
+
+  .todo-form {
+    grid-template-columns: minmax(0, 1fr) 110px;
+  }
+
+  .todo-form input,
+  .todo-form button {
+    font-size: 22px;
+  }
+
+  .list-heading {
+    font-size: 39px;
+  }
+
+  .search-row {
+    gap: 6px;
+  }
+
+  .search-row label,
+  .technology-item,
+  .technology-list p {
+    font-size: 27px;
+  }
+
+  .search-row input {
+    height: 43px;
+    font-size: 26px;
+  }
+}

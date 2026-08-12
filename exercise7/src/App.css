@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.card {
+  --bs-bg-opacity: 0.82;
+}
+.image-box {
+  display: grid;
+  min-height: 230px;
+  place-items: center;
+  background: white;
+}
+.car {
+  width: 95%;
+  max-height: 220px;
+}
+.card-body {
+  padding-bottom: 0;
+}
+@media (max-width: 600px) {
+  .image-box {
+    min-height: 180px;
+  }
+}

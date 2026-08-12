@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef4ff, #fff4df);
+  font-family: Arial, sans-serif;
+}
+.booking-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+  place-items: center;
+}
+.booking-form {
+  width: min(640px, 100%);
+  padding: 28px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+.booking-form h1 {
+  margin-bottom: 22px;
+  font-size: clamp(30px, 6vw, 46px);
+}
+.form-control,
+.form-select,
+.input-group-text {
+  min-height: 46px;
+}
+@media (max-width: 575px) {
+  .booking-form {
+    padding: 20px;
+  }
+  .row > div + div {
+    margin-top: 16px;
+  }
+}
