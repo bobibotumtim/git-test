@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background: #1d1d1d;
+  font-family: Arial, sans-serif
+}
+
+.logo {
+  width: 50%;
+  height: min(20vh, 150px);
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  height: min(70vh, 650px);
+  object-fit: cover;
+  filter: brightness(.62)
+}
+
+.carousel-caption {
+  bottom: 12%;
+  text-shadow: 0 2px 8px #000
+}
+
+. carousel-caption h1 {
+  font-size: clamp(34px, 6vw, 64px)
+}
+
+. menu-section {
+  padding: 70px 0;
+  background: #222;
+  color: white
+}
+
+.section-title {
+  margin-bottom: 28px;
+  font-size: 40px
+}
+
+.menu-card {
+  position: relative;
+  overflow: hidden;
+  color: #202020;
+  border: 0
+}
+
+.menu-card .card-img-top {
+  height: 220px;
+  object-fit: cover
+}
+
+.sale-badge {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  left: 14px
+}
+
+.reservation-section {
+  padding: 70px 0;
+  background: #ae9e9e
+}
+
+.reservation-section .form-control,
+.reservation-section .form-select {
+  min-height: 48px
+}
