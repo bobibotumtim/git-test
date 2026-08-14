@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 20px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 42px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  background-color: #eeeeee;
+}
+
+.app.dark .theme-button {
+  color: white;
+  border-color: white;
+}
+
+.app.dark .theme-button:hover {
+  background-color: #333333;
+}

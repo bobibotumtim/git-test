@@ -1,0 +1,67 @@
+.class-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  justify-content: space-between;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+
+.class-control {
+  flex: 1.1;
+  height: 42px;
+  padding: 0 10px;
+  color: #333333;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.class-control:focus {
+  border-color: #803000;
+  box-shadow: 0 0 0 3px rgb(128 48 0 / 12%);
+}
+
+.reset-filter-button {
+  height: 42px;
+  padding: 0 18px;
+  color: white;
+  background-color: #803000;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.reset-filter-button:hover {
+  background-color: #652600;
+}
+
+.app.dark .class-form,
+.app.dark .class-control {
+  color: white;
+  background-color: #292929;
+  border-color: #444444;
+}
+
+.app.dark .class-control::placeholder {
+  color: #bdbdbd;
+}
+
+@media (max-width: 720px) {
+  .class-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .class-control,
+  .reset-filter-button {
+    width: 100%;
+  }
+}
