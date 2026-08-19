@@ -1,0 +1,141 @@
+.detail-page {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #333;
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.detail-code {
+  margin: 0 0 6px;
+  color: #666;
+  font-weight: 600;
+}
+
+.detail-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.class-select {
+  display: grid;
+  width: 220px;
+  gap: 6px;
+}
+
+.class-select span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.class-select select {
+  height: 40px;
+  padding: 0 10px;
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.action-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.action-button {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 0 14px;
+  color: #222;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.action-button--delete {
+  color: #a00;
+  border-color: #c99;
+}
+
+.action-button--toggle {
+  color: white;
+  background: #333;
+  border-color: #333;
+}
+
+.action-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.detail-error {
+  padding: 10px;
+  color: #a00;
+  background: #fff4f4;
+  border: 1px solid #dcc;
+}
+
+.requirements {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.requirements h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.requirements li + li {
+  margin-top: 8px;
+}
+
+.detail-message {
+  max-width: 560px;
+  padding: 24px;
+  margin: 60px auto;
+  border: 1px solid #ddd;
+}
+
+.detail-message-actions {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 650px) {
+  .detail-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .class-select {
+    width: 100%;
+  }
+
+  .detail-header h1 {
+    font-size: 26px;
+  }
+}

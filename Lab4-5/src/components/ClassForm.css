@@ -1,0 +1,116 @@
+.add-class-card {
+  padding: 20px;
+  margin-bottom: 24px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.add-class-form {
+  display: grid;
+  gap: 14px;
+}
+
+.add-class-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.add-control {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  color: #222222;
+  background-color: white;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  outline: none;
+}
+
+.add-control:focus {
+  border-color: #803000;
+  box-shadow: 0 0 0 3px rgb(128 48 0 / 12%);
+}
+
+.add-status {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.add-status-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.add-status-option input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #0d8be6;
+}
+
+.add-class-button {
+  width: max-content;
+  min-height: 42px;
+  padding: 8px 20px;
+  color: white;
+  background-color: #803000;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-class-button:hover {
+  background-color: #652600;
+}
+
+.add-class-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.add-message {
+  margin: 0;
+  font-size: 14px;
+}
+
+.add-message--success {
+  color: #17723b;
+}
+
+.add-message--error {
+  color: #a12f2f;
+}
+
+.app.dark .add-class-card,
+.app.dark .add-control {
+  color: white;
+  background-color: #292929;
+  border-color: #555555;
+}
+
+.app.dark .add-control::placeholder {
+  color: #bdbdbd;
+}
+
+.app.dark .add-message--success {
+  color: #7de3a5;
+}
+
+.app.dark .add-message--error {
+  color: #ffaaaa;
+}
+
+@media (max-width: 850px) {
+  .add-class-fields {
+    grid-template-columns: 1fr;
+  }
+}

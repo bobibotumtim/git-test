@@ -1,0 +1,80 @@
+.course-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.course-search {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.course-search > svg {
+  position: absolute;
+  left: 10px;
+  width: 18px;
+  fill: none;
+  stroke: #666;
+  stroke-width: 2;
+}
+
+.course-search input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.clear-search {
+  position: absolute;
+  right: 8px;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.category-filter {
+  display: flex;
+  gap: 5px;
+}
+
+.category-filter button {
+  height: 36px;
+  padding: 0 12px;
+  color: #444;
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category-filter button.is-active {
+  color: white;
+  background: #333;
+  border-color: #333;
+}
+
+.course-result-count {
+  margin: 0;
+  color: #666;
+  white-space: nowrap;
+}
+
+@media (max-width: 750px) {
+  .course-filter {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .category-filter button {
+    flex: 1;
+  }
+}
