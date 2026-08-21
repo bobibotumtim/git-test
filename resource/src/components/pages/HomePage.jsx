@@ -1,43 +1,18 @@
-import React, { useState } from 'react';
-import {Col, Container} from "react-bootstrap";
-import Top from '../Top';
-import Middle from '../Middle';
-import { Bottom } from '../Bottom';
+import { Container } from "react-bootstrap";
+import Top from "../Top";
+import { Bottom } from "../Bottom";
 
-const HomePage = () => {
-  const [selectedCuisines, setSelectedCuisines] = useState([]);
-  const [selectedMealTypes, setSelectedMealTypes] = useState([]);
-  const [selectedTags, setSelectedTags] = useState([]);
-
-
-
-  return (
-    <Container>
-      <h1 className='m-4'>Subject List</h1>
-      
-        <Col>
-        
-        <Top
-            selectedCuisines={selectedCuisines}
-            setSelectedCuisines={setSelectedCuisines}
-            selectedMealTypes={selectedMealTypes}
-            setSelectedMealTypes={setSelectedMealTypes}
-          />
-        
-          <Middle
-            selectedCuisines={selectedCuisines}
-            selectedMealTypes={selectedMealTypes}
-            selectedTags={selectedTags}
-          />
-          <Bottom
-            selectedTags={selectedTags}
-            setSelectedTags={setSelectedTags}
-          />
-        
-        </Col>
-          
+const HomePage = () => (
+  <div className="portal-page">
+    <Top />
+    <Container className="py-4 py-md-5">
+      <div className="page-heading">
+        <p className="eyebrow mb-2">Learning material portal</p>
+        <h1>Subject List</h1>
+      </div>
+      <Bottom />
     </Container>
-  )
-}
+  </div>
+);
 
 export default HomePage;
